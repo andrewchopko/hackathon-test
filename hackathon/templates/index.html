@@ -4,6 +4,11 @@
 	<title>Index Page</title>
 </head>
 <body>
-<h1>Index Page -> Main Catalog page</h1>
+{% for obj in object_list %}
+<b> Titlle: </b>{{obj.title}}<br/>
+<b> Content: </b>{{obj.content}}<br/>
+<b> ID: </b>{{obj.id}}<br/>
+<b> Created at: </b>{{obj.created}}<br/><br/><br/>
+{% endfor %}
 </body>
 </html>
