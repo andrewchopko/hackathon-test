@@ -1,6 +1,12 @@
 from django.contrib import admin
 
 # Register your models here.
-from product.models import Product
+from .models import Product
 
-admin.site.register(Product)
+class ProductModelAdmin(admin.ModelAdmin):
+	list_display = ["title", "created", "updated"]
+	list_display_links = ["title"]
+	class Meta:
+		model = Product
+
+admin.site.register(Product, ProductModelAdmin)

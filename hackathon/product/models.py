@@ -11,7 +11,7 @@ class Product(models.Model):
 	created = models.DateTimeField(auto_now=False, auto_now_add=True)
 
 	def __unicode__(self):
-		return title
+		return self.title
 
 	def __str__(self):
-		return title
+		return self.title
