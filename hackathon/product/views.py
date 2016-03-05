@@ -19,8 +19,6 @@ def product_create(request):
 		instance.save()
 		messages.success(request, "Successfully Added New Product")
 		return HttpResponseRedirect(instance.get_absolute_url())
-	else:
-		messages.error(request, "The Product Not Added")
 	context = {
 		"form": form,
 	}

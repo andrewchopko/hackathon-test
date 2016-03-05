@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Index Page</title>
-</head>
-<body>
-{% for obj in object_list %}
-<a href='{{obj.get_absolute_url}}'><b> Title: </b>{{obj.title}}</a><br/>
-<b> Content: </b>{{obj.content}}<br/>
-<b> ID: </b>{{obj.id}}<br/>
-<b> Created at: </b>{{obj.created}}<br/><br/><br/>
-{% endfor %}
-</body>
-</html>
+{% include "head.html" %}
+ {% load staticfiles %}
+        <div class="information">
+            <div class="products">
+            {% for obj in object_list %}
+                <a href="{{obj.get_absolute_url}}">
+                    <div class="product row">
+                        <div class="col-md-4">
+                            <img src='{% static "img/info1.jpg" %}' alt="">
+                        </div>
+                        <div class="col-md-8">
+								<h3><b>{{obj.title}}</b></h3>
+								<p> {{obj.content}}</p>
+                            <div class="price">
+                                <p>300 <i class="fa fa-usd"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+            {% endfor %}
+            </div>
+        </div>
+{% include "footer.html" %}

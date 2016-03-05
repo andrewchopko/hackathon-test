@@ -1,0 +1,67 @@
+{% include "head.html" %}
+    {% load staticfiles %}
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>                       
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/static/img/carousel1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Piece of engineering on your hand</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/img/carousel2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Specific watch for specific people.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/img/carousel3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Fast. Thin. Beautiful.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="information">
+            <a href="/products">
+                <div class="row">
+                <div class="col-md-6">
+                    <img src="static/img/info1.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2><b>toBeSuccessful&trade;</b> Watch One</h2>
+                    <h3>They are literally on their hands.</h3>
+                    <h4>It weighs only 47 grams, and the thickness of its shell does not exceed 12mm.<br><br>They are the most delicate and light hours in class.</h4>
+                </div>
+            </div>
+            </a>
+            <a href="/products">
+                <div class="row">
+                <div class="col-md-6">
+                    <h2><b>toBeSuccessful&trade;</b> Watch Square</h2>
+                    <h3>Right on your wrist.</h3>
+                    <h4>It weighs only 47 grams, and the thickness of its shell does not exceed 12mm.<br><br>They are the most delicate and light hours in class.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="static/img/info2.jpg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="/products"><div class="row">
+                <div class="col-md-6">
+                    <img src="static/img/info3.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2><b>toBeSuccessful&trade;</b> Watch Next</h2>
+                    <h3>Second per second to your style.</h3>
+                    <h4>They have a slot for a SIM card and GPS navigator. <br> <br> Thanks to them, you will always stay in touch.</h4>
+                </div>
+            </div></a>
+        </div>
+{% include "footer.html" %}      
