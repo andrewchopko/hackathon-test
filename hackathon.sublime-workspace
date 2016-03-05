@@ -3,6 +3,50 @@
 	{
 		"selected_items":
 		[
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"STAT",
+				"STATIC_URL"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"pro",
+				"product_delete"
+			],
+			[
+				"pr",
+				"product_detail"
+			],
+			[
+				"p",
+				"product_update"
+			],
+			[
+				"product_",
+				"product_list"
+			],
+			[
+				"Produ",
+				"ProductModelAdmin"
+			],
+			[
+				"au",
+				"auto_now_add"
+			],
+			[
+				"django",
+				"djangoproject"
+			],
+			[
+				"ur",
+				"url"
+			]
 		]
 	},
 	"buffers":
@@ -38,12 +82,44 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/andrew/Django/hackathon/hackathon",
+		"/home/andrew/Django/hackathon/hackathon/static/css",
+		"/home/andrew/Django/hackathon/hackathon/static/js"
+	],
 	"file_history":
 	[
+		"/home/andrew/Django/hackathon/hackathon/hackathon/urls.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/head.html",
+		"/home/andrew/Django/hackathon/hackathon/about/views.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/about.html",
+		"/home/andrew/Django/hackathon/hackathon/hackathon/settings.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/footer.html",
+		"/home/andrew/Django/hackathon/hackathon/templates/home.html",
+		"/home/andrew/Django/hackathon/hackathon/about/urls.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/qqq.md",
+		"/home/andrew/Django/hackathon/hackathon/home/views.py",
+		"/home/andrew/Django/hackathon/hackathon/home/urls.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/detail_product.html",
+		"/home/andrew/Django/hackathon/hackathon/templates/index.html",
+		"/home/andrew/Django/hackathon/hackathon/static/css/font-awesome.css",
+		"/home/andrew/Django/hackathon/hackathon/templates/update_product.html",
+		"/home/andrew/Django/hackathon/hackathon/templates/create_product.html",
+		"/home/andrew/Django/hackathon/hackathon/product/urls.py",
+		"/home/andrew/Django/hackathon/hackathon/product/views.py",
+		"/home/andrew/Django/hackathon/hackathon/src/urls.py",
+		"/home/andrew/Django/hackathon/hackathon/src/settings.py",
+		"/home/andrew/Django/hackathon/hackathon/product/forms.py",
+		"/home/andrew/Django/hackathon/hackathon/product/models.py",
+		"/home/andrew/Django/hackathon/hackathon/templates/delete_product.html",
+		"/home/andrew/Django/hackathon/hackathon/templates/create_post.html",
+		"/home/andrew/Django/hackathon/hackathon/product/admin.py",
+		"/home/andrew/Django/hackathon/hackathon/home/models.py"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -57,6 +133,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\">       ",
+			"url"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -81,11 +159,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -118,7 +196,7 @@
 	"project": "hackathon.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -153,10 +231,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 357.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
