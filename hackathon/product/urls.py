@@ -9,9 +9,9 @@ from .views import (
 	)
 
 urlpatterns = [
-    url(r'^$', product_list),
+    url(r'^$', product_list, name='list'),
     url(r'^create/$', product_create),
-    url(r'^update/$', product_update),
-    url(r'^detail/$', product_detail),
-    url(r'^delete/$', product_delete),
+    url(r'^(?P<id>\d+)/edit/$', product_update, name='edit'),
+    url(r'^(?P<id>\d+)$', product_detail, name='detail'),
+    url(r'^(?P<id>\d+)/delete/$', product_delete),
 ]
