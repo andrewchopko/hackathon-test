@@ -196,10 +196,13 @@ header .col-md-4 .row .link{
 
 .modal-body label{
     color: #0097a7;
+
 }
 
 .modal-body input{
     width: 250px;
+    color: #000333;
+    font-family: 'Roboto', sans-serif;
 }
 
 body .main footer {

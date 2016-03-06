@@ -22,8 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^products/', include("product.urls", namespace="products")),
     url(r'^', include("home.urls", namespace="home")),
-    url(r'^about/$', include("about.urls", namespace="about")),
+    url(r'^about/', include("about.urls", namespace="about")),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

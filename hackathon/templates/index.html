@@ -6,13 +6,15 @@
                 <a href="{{obj.get_absolute_url}}">
                     <div class="product row">
                         <div class="col-md-4">
-                            <img src='{% static "img/info1.jpg" %}' alt="">
+                            {% if obj.image %}
+                            <img src='{{ obj.image.url }}' alt="" class="img-responsive">
+                            {%endif%}
                         </div>
                         <div class="col-md-8">
 								<h3><b>{{obj.title}}</b></h3>
 								<p> {{obj.content}}</p>
                             <div class="price">
-                                <p>300 <i class="fa fa-usd"></i></p>
+                                <p>{{ obj.price }} <i class="fa fa-usd"></i></p>
                             </div>
                         </div>
                     </div>

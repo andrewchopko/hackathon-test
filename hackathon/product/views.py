@@ -13,7 +13,7 @@ def product_list(request):
 	#return HttpResponse("<h1> Hello!! </h1>")
 
 def product_create(request):
-	form = ProductForm(request.POST or None)
+	form = ProductForm(request.POST or None, request.FILES or None)
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
@@ -43,7 +43,7 @@ def product_delete(request, id=None):
 def product_update(request, id=None):
 	instance = get_object_or_404(Product, id=id)
 	
-	form = ProductForm(request.POST or None, instance=instance)
+	form = ProductForm(request.POST or None, request.FILES or None, instance=instance)
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
